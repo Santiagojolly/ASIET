@@ -5,20 +5,20 @@ import java.util.*;
 class palindrome
  {
     public static void main(String[] args) {
-        String st, reverse = "";
+        String str, reverse = "";
         Scanner S1 = new Scanner(System.in);
         System.out.println("Enter the string:");
-        st = S1.nextLine();
-        int length = st.length();
+        str = S1.nextLine();
+        int length = str.length();
 
         for (int i = length - 1; i >= 0; i--) {
-            reverse = reverse + st.charAt(i);
+            reverse = reverse + str.charAt(i);
         }
 
-        if (reverse.equals(st)) {
-            System.out.println("The string " +st+ " is a Palindrome");
+        if (reverse.equals(str)) {
+            System.out.println("The string " +str+ " is a Palindrome");
         } else {
-            System.out.println("The string " +st +" is not a Palindrome");
+            System.out.println("The string " +str +" is not a Palindrome");
         }
 
         S1.close();
