@@ -14,3 +14,4 @@ class sumthree
         System.out.println("The sum is "+sum); 
         S1.close();
     }
+}
